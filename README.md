@@ -1,3 +1,3 @@
 # AIdea-Defect-Classifications-of-AOI
 # Introduction
-This project aims to implement a multi-input convolutional neural network referred to in a paper [[1]](https://www.graphyonline.com/archives/IJCSE/2018/IJCSE-137/).
+This project aims to implement a multi-input convolutional neural network referred to in a paper [[1]](https://www.graphyonline.com/archives/IJCSE/2018/IJCSE-137/) for Automated Optical Inspection (AOI) defect classificatons. However, in this project pretrained Resnet50 is used to replace each CNN designed in the original paper, and the output layers of the two Resnet50 networks are concatenated followed by the last linear layer. The accuracy of the model reaches 99.21% on the testing data provided by AIdea [[2]](https://aidea-web.tw/topic/285ef3be-44eb-43dd-85cc-f0388bf85ea4).
