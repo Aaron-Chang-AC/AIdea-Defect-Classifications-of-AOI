@@ -24,11 +24,13 @@ The data includes images of PNG format and labels ranging from 0 to 5.
 The figure below illustrates how the model classifies each input image into 6 categories. First of all, an input image is duplicated (and rotated properly with a predefined probability), and one of the duplicated images is further sharpened as the second input tensor. Next, there are two Resnet50 models responsible for extracting features from the two images. After this, the tensors are concatenated before a linear layer and a softmax layer. Finally, the output tensor with the shape (batch_size, 6) is produced. For instance, when there is only one image, the output tensor has the shape (1, 6).
 ![Model](/display_images/model.png)
 ## Results
-The settings of the hyperparameters are provided in the implementation code, and the scores are shown in the table below. For a comparison, the best result acquired by a VGG16 fine-tuned model is from another participant [[4]](https://github.com/hcygeorge/aoi_defect_detection). The results imply that deep residual networks may perform better than VGG16 in terms of teh accuracy and the number of trainable parameters (23M in Resnet50 and 138M in VGG16) on this task.
+The settings of the hyperparameters are provided in the implementation code, and the scores calculated by AIdea are shown in the table below. For a comparison, the best result acquired by a VGG16 fine-tuned model is from another participant [[4]](https://github.com/hcygeorge/aoi_defect_detection). The results imply that deep residual networks may perform better than VGG16 in terms of teh accuracy and the number of trainable parameters (23M in Resnet50 and 138M in VGG16) on this task.
 |Model |Accuracy|
 |-----|--------|
+|VGG16 (one-input)  |99.0% |
 |Resnet50 (one-input)     |99.01% |
 |Resnet50 (multi-input)   |99.21% |
-|VGG16 (one-input)  |99.0% |
+## References
+[[1] T. Shiina, Y. Iwahori, and B. Kijsirikul, “Defect classification of electronic circuit board using multi-input convolutional neural network,” Int. J. Comput. Softw. Eng., vol. 3, no. 2, pp. 2456–4451, 2018.](https://www.graphyonline.com/archives/IJCSE/2018/IJCSE-137/)
 
 
