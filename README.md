@@ -7,9 +7,9 @@ This project aims to implement a multi-input convolutional neural network referr
 ### testing data: 
 10142 PNG images
 ### Labels: 
-0 : normal
-1 : void
-2 : horizontal defect
-3 : vertical defect
-4 : edge defect
-5 : particle
+0 : normal,
+1 : void,
+2 : horizontal defect,
+3 : vertical defect,
+4 : edge defect,
+5 : particle.
