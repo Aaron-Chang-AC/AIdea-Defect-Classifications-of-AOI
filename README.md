@@ -21,4 +21,4 @@ The data includes images of PNG format and labels ranging from 0 to 5.
 5 : particle.
 ## Model
 ### Structure
-![Model]()
+![Model](/display_images/model.png)
