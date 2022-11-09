@@ -19,3 +19,4 @@ The data includes images of PNG format and labels ranging from 0 to 5.
 3 : vertical defect,
 4 : edge defect,
 5 : particle.
+## Model
