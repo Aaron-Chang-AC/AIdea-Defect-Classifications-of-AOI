@@ -32,6 +32,6 @@ The settings of the hyperparameters are provided in the implementation code, and
 |Resnet50 (multi-input)   |99.21% |
 ## References
 [[1] T. Shiina, Y. Iwahori, and B. Kijsirikul, “Defect classification of electronic circuit board using multi-input convolutional neural network,” Int. J. Comput. Softw. Eng., vol. 3, no. 2, pp. 2456–4451, 2018.](https://www.graphyonline.com/archives/IJCSE/2018/IJCSE-137/)  
-[[2] K. He, X. Zhang, S. Ren, and J. Sun, “Deep residual learning for image recognition,” in Proceedings of the IEEE conference on computer vision and pattern recognition, 2016, pp. 770–778.](https://openaccess.thecvf.com/content_cvpr_2016/html/He_Deep_Residual_Learning_CVPR_2016_paper.html)
-[[3] AIdea](https://aidea-web.tw/topic/285ef3be-44eb-43dd-85cc-f0388bf85ea4)
-[[4] A VGG16 fine-tuned model from another participant](https://github.com/hcygeorge/aoi_defect_detection)
+[[2] K. He, X. Zhang, S. Ren, and J. Sun, “Deep residual learning for image recognition,” in Proceedings of the IEEE conference on computer vision and pattern recognition, 2016, pp. 770–778.](https://openaccess.thecvf.com/content_cvpr_2016/html/He_Deep_Residual_Learning_CVPR_2016_paper.html)  
+[[3] AIdea](https://aidea-web.tw/topic/285ef3be-44eb-43dd-85cc-f0388bf85ea4)  
+[[4] A VGG16 fine-tuned model from another participant](https://github.com/hcygeorge/aoi_defect_detection)  
