@@ -1,6 +1,6 @@
 # AIdea-Defect-Classifications-of-AOI
 ## Introduction
-This project aims to implement a multi-input convolutional neural network referred to in a paper [[1]](https://www.graphyonline.com/archives/IJCSE/2018/IJCSE-137/) for Automated Optical Inspection (AOI) defect classificatons. However, in the project, pretrained Resnet50 models are used to replace CNNs designed in the original paper (CNN2), and the output layers of the two Resnet50 [[2]](https://openaccess.thecvf.com/content_cvpr_2016/html/He_Deep_Residual_Learning_CVPR_2016_paper.html) networks are concatenated followed by the last linear layer. The accuracy of the model reaches 99.21% on the testing data provided by AIdea [[3]](https://aidea-web.tw/topic/285ef3be-44eb-43dd-85cc-f0388bf85ea4), and the score was ranked 55th out of 432 groups on 8th of November in 2022. The total number of groups was 910, which meant there were 478 groups failed to upload their solutions. In addition, a Vision Transformer (ViT) [[5]](https://arxiv.org/pdf/2010.11929.pdf) version is also implemented for evaluation.
+This project aims to implement a multi-input convolutional neural network referred to in a paper [[1]](https://www.graphyonline.com/archives/IJCSE/2018/IJCSE-137/) for Automated Optical Inspection (AOI) defect classificatons. However, in the project, pretrained Resnet50 models are used to replace CNNs designed in the original paper (CNN2), and the output layers of the two Resnet50 [[2]](https://openaccess.thecvf.com/content_cvpr_2016/html/He_Deep_Residual_Learning_CVPR_2016_paper.html) networks are concatenated followed by the last linear layer. The accuracy of the model reaches 99.21% on the testing data provided by AIdea [[3]](https://aidea-web.tw/topic/285ef3be-44eb-43dd-85cc-f0388bf85ea4), and the score was ranked 55th out of 432 groups on 8th of November in 2022. The total number of groups was 910, which meant there were 478 groups failed to upload their solutions. In addition, a Vision Transformer (ViT) [[5]](https://arxiv.org/pdf/2010.11929.pdf) version is also implemented for evaluation. The accuracy score from ViT is ranked 13th (99.58%), and the score is the same as that of the 9th group.  
 ## Specifications
 Platform: Google Colaboratory  
 Language: Python 3.7.13  
@@ -18,7 +18,7 @@ The data includes images of PNG format and labels ranging from 0 to 5.
 2 : horizontal defect,
 3 : vertical defect,
 4 : edge defect,
-5 : particle.
+5 : particle.  
 ## Model
 ### Structure
 The figure below illustrates how the model classifies each input image into 6 categories. First of all, an input image is duplicated (and rotated properly with a predefined probability), and one of the duplicated images is further sharpened as the second input tensor. Next, there are two Resnet50 models responsible for extracting features from the two images. After this, the tensors are concatenated before a linear layer and a softmax layer. Finally, the output tensor with the shape (batch_size, 6) is produced. For instance, when there is only one image, the output tensor has the shape (1, 6).
@@ -36,4 +36,4 @@ The settings of the hyperparameters are provided in the implementation code, and
 [[2] K. He, X. Zhang, S. Ren, and J. Sun, “Deep residual learning for image recognition,” in Proceedings of the IEEE conference on computer vision and pattern recognition, 2016, pp. 770–778.](https://openaccess.thecvf.com/content_cvpr_2016/html/He_Deep_Residual_Learning_CVPR_2016_paper.html)  
 [[3] AIdea](https://aidea-web.tw/topic/285ef3be-44eb-43dd-85cc-f0388bf85ea4)  
 [[4] A VGG16 fine-tuned model from another participant](https://github.com/hcygeorge/aoi_defect_detection)  
-[[5] A. Dosovitskiy et al., “An image is worth 16x16 words: Transformers for image recognition at scale,” arXiv preprint arXiv:2010.11929, 2020.]
+[[5] A. Dosovitskiy et al., “An image is worth 16x16 words: Transformers for image recognition at scale,” arXiv preprint arXiv:2010.11929, 2020.](https://arxiv.org/abs/2010.11929)  
