@@ -33,7 +33,8 @@ The settings of the hyperparameters are provided in the implementation code, and
 |ViT-base (one-input)   |99.58% |
 |ViT-base (multi-input)   |99.70% |
 |ViTMAE-base (multi-input)   |99.31% |
-|Ensemble (ViT-one-input, ViT-multi-input, ViTMAE-multi-input)   |99.75% |
+|Ensemble (ViT-one-input, ViT-multi-input, ViTMAE-multi-input)   |99.75% |  
+![rank](/display_images/rank.png)
 ## References
 [[1] T. Shiina, Y. Iwahori, and B. Kijsirikul, “Defect classification of electronic circuit board using multi-input convolutional neural network,” Int. J. Comput. Softw. Eng., vol. 3, no. 2, pp. 2456–4451, 2018.](https://www.graphyonline.com/archives/IJCSE/2018/IJCSE-137/)  
 [[2] K. He, X. Zhang, S. Ren, and J. Sun, “Deep residual learning for image recognition,” in Proceedings of the IEEE conference on computer vision and pattern recognition, 2016, pp. 770–778.](https://openaccess.thecvf.com/content_cvpr_2016/html/He_Deep_Residual_Learning_CVPR_2016_paper.html)  
