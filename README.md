@@ -34,7 +34,7 @@ The settings of the hyperparameters are provided in the implementation code, and
 |ViT-base (multi-input)   |99.70% |
 |ViTMAE-base (multi-input)   |99.31% |
 |Ensemble (ViT-one-input, ViT-multi-input, ViTMAE-multi-input)   |99.75% |  
-
+### Rank
 ![rank](/display_images/rank.PNG)
 ## References
 [[1] T. Shiina, Y. Iwahori, and B. Kijsirikul, “Defect classification of electronic circuit board using multi-input convolutional neural network,” Int. J. Comput. Softw. Eng., vol. 3, no. 2, pp. 2456–4451, 2018.](https://www.graphyonline.com/archives/IJCSE/2018/IJCSE-137/)  
