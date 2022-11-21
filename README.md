@@ -29,8 +29,9 @@ The settings of the hyperparameters are provided in the implementation code, and
 |-----|--------|
 |VGG16 (one-input)  |99.0% |
 |Resnet50 (one-input)     |99.01% |
-|Resnet50 (multi-input)   |99.21% |
 |ViT-base (one-input)   |99.58% |
+|ViT-large (one-input)   |99.53% |
+|Resnet50 (multi-input)   |99.21% |
 |ViT-base (multi-input)   |99.70% |
 |ViTMAE-base (multi-input)   |99.31% |
 |Ensemble (ViT-one-input, ViT-multi-input, ViTMAE-multi-input)   |99.75% |  
